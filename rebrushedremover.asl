@@ -4,6 +4,12 @@ state("recolored-Win64-Shipping")
     byte loading: 0x0522E878, 0xE0, 0x60;
 }
 
+exit
+{
+    //pauses timer if the game crashes
+	timer.IsGameTimePaused = true;
+}
+
 isLoading
 {
     //return current.loading == 144 || current.loading == null;
