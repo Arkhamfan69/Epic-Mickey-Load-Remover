@@ -10,6 +10,14 @@ exit
 	timer.IsGameTimePaused = true;
 }
 
+onStart
+{
+    vars.completedSplits.Clear();
+
+    // This makes sure the timer always starts at 0.00
+    timer.IsGameTimePaused = true;
+}
+
 isLoading
 {
     //return current.loading == 144 || current.loading == null;
